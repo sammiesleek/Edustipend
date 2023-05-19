@@ -1,0 +1,28 @@
+.header{
+    border: 1px solid #ccc;
+    padding: 15px 20px ;
+    align-items: flex-end;
+    justify-content: flex-end;
+    display: flex;
+    .wrap{
+        display: flex;
+        width: fit-content;
+        justify-content: center;
+        align-items: center;
+        .items{
+            color: black;
+             font-weight: 400;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        .signup{
+            background: rgb(214, 145, 70);
+            margin-left: 30px;
+            padding: 3px 15px;
+            border-radius: 5px;
+            
+           
+        }
+
+   }
+}

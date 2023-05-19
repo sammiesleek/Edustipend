@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/header/header";
+import songs from "./components/song/songs";
+import trendingSongs from "./data/songs";
+import '.'
 
-function App() {
+const App = () => {
+  console.log(trendingSongs)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header/>
+      <div className="sidebar">
+        <h1 className="tittle">Trending Songs</h1>
+
+       {trendingSongs.map((song,i)=>(
+         <div className="cont">
+
+           <h1>{song}</h1>
+           <span>+</span>
+         </div>
+
+       )) }
+       <a href="" className="btn-view">View more</a>
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
